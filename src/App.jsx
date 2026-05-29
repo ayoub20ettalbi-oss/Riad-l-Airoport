@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, MapPin, Phone, Coffee, Wifi, Shield, Plane, ArrowRight, Check, Menu, X, Sparkles, Heart, Leaf, Music } from 'lucide-react';
+import heroBg from './assets/hero-bg.jpg';
+import zelligeImg from './assets/zellige.jpg';
+import piscineImg from './assets/piscine.jpg';
+import foodImg from './assets/food.jpg';
+import terrasseImg from './assets/terrasse.jpg';
+import marrakechImg from './assets/marrakech.jpg';
+import room1Img from './assets/room1.jpg';
+import room2Img from './assets/room2.jpg';
+import room3Img from './assets/room3.jpg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -23,7 +32,7 @@ const ROOMS = [
     name: 'The Medina Suite',
     price: '$120',
     description: 'Authentic Zellige tilework, a private balcony, and warm sunset views into the courtyard.',
-    image: '/images/room3.jpg',
+    image: room3Img,
     imageAlt: 'Luxury bedroom suite with Moroccan textiles and soft ambient lighting.'
   },
   {
@@ -31,7 +40,7 @@ const ROOMS = [
     name: 'The Majorelle Room',
     price: '$85',
     description: 'Serene blue accents inspired by the garden, organic linens, and a spacious seating niche.',
-    image: '/images/room2.jpg',
+    image: room2Img,
     imageAlt: 'Elegant guest room with blue accents and refined Moroccan craftsmanship.'
   },
   {
@@ -39,7 +48,7 @@ const ROOMS = [
     name: 'The Atlas Penthouse',
     price: '$210',
     description: 'Panoramic mountain views, private rooftop lounge, and an intimate jacuzzied terrace.',
-    image: '/images/room1.jpg',
+    image: room1Img,
     imageAlt: 'Rooftop terrace with mountain views and luxurious lounge seating.'
   }
 ];
@@ -148,7 +157,7 @@ export default function App() {
       <main className="pt-28">
         <section className="relative h-screen overflow-hidden">
           <img
-            src="/images/hero-bg.jpg"
+            src={heroBg}
             alt="Central courtyard of a luxury riad at dusk"
             className="absolute inset-0 h-full w-full object-cover"
             style={{ transform: `translateY(${heroOffset / 2}px)`, opacity: Math.max(0.95 - heroOffset / 200, 0.75) }}
@@ -192,10 +201,10 @@ export default function App() {
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={fadeUp} className="grid gap-6 sm:grid-cols-2">
               <div className="overflow-hidden rounded-[2rem] shadow-2xl shadow-stone-900/10">
-                <img src="/images/zellige.jpg" alt="Intricate Moroccan zellige tilework" className="h-80 w-full object-cover" />
+                <img src={zelligeImg} alt="Intricate Moroccan zellige tilework" className="h-80 w-full object-cover" />
               </div>
               <div className="overflow-hidden rounded-[2rem] shadow-2xl shadow-stone-900/10">
-                <img src="/images/piscine.jpg" alt="Tranquil riad pool area" className="h-80 w-full object-cover" />
+                <img src={piscineImg} alt="Tranquil riad pool area" className="h-80 w-full object-cover" />
               </div>
             </motion.div>
           </div>
@@ -309,10 +318,10 @@ export default function App() {
 
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="overflow-hidden rounded-[2rem] shadow-2xl shadow-black/30">
-                  <img src="/images/food.jpg" alt="Fine dining presentation" className="h-96 w-full object-cover" />
+                  <img src={foodImg} alt="Fine dining presentation" className="h-96 w-full object-cover" />
                 </div>
                 <div className="overflow-hidden rounded-[2rem] shadow-2xl shadow-black/30">
-                  <img src="/images/terrasse.jpg" alt="Rooftop dining experience" className="h-96 w-full object-cover" />
+                  <img src={terrasseImg} alt="Rooftop dining experience" className="h-96 w-full object-cover" />
                 </div>
               </div>
             </div>
@@ -395,7 +404,7 @@ export default function App() {
               </div>
             </div>
             <div className="rounded-[2.5rem] overflow-hidden shadow-[0_40px_120px_-50px_rgba(15,23,42,0.35)]">
-              <img src="/images/marrakech.jpg" alt="Luxury riad entrance corridor" className="h-full w-full object-cover" />
+              <img src={marrakechImg} alt="Luxury riad entrance corridor" className="h-full w-full object-cover" />
             </div>
           </div>
         </section>
@@ -417,3 +426,6 @@ export default function App() {
     </div>
   );
 }
+
+
+
