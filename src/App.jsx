@@ -284,7 +284,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="dining" className="relative overflow-hidden bg-fixed bg-center bg-cover bg-[url('/images/food.jpg')] py-28">
+        <section id="dining" className="relative overflow-hidden bg-fixed bg-center bg-cover py-28" style={{ backgroundImage: `url(${foodImg})` }}>
           <div className="absolute inset-0 bg-black/55" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,214,116,0.18),_transparent_35%)]" />
           <div className="relative max-w-7xl mx-auto px-6">
