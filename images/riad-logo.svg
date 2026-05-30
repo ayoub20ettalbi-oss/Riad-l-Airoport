@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f5f5f4" />
+  
+  <!-- Outer Ring (Zellige inspired) -->
+  <path d="M100 10 L10 100 L100 190 L190 100 Z" fill="none" stroke="#b45309" stroke-width="2" />
+  <path d="M100 20 L20 100 L100 180 L180 100 Z" fill="none" stroke="#b45309" stroke-width="4" />
+  
+  <!-- Inner Motif (Moroccan Arch) -->
+  <path d="M70 140 C70 90, 80 60, 100 40 C120 60, 130 90, 130 140 Z" fill="#b45309" />
+  <path d="M80 140 C80 100, 90 70, 100 55 C110 70, 120 100, 120 140 Z" fill="#f5f5f4" />
+  
+  <!-- Central Element -->
+  <circle cx="100" cy="110" r="8" fill="#b45309" />
+  
+  <!-- Small details -->
+  <circle cx="100" cy="30" r="3" fill="#b45309" />
+  <circle cx="100" cy="170" r="3" fill="#b45309" />
+  <circle cx="30" cy="100" r="3" fill="#b45309" />
+  <circle cx="170" cy="100" r="3" fill="#b45309" />
+</svg>
