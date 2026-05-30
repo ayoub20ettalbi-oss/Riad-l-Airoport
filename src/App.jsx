@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, MapPin, Phone, Coffee, Wifi, Shield, Plane, ArrowRight, Check, Menu, X, Sparkles, Heart, Leaf, Music } from 'lucide-react';
-import heroBg from '/images/hero-bg.jpg';
-import zelligeImg from '/images/zellige.jpg';
-import piscineImg from '/images/piscine.jpg';
-import foodImg from '/images/food.jpg';
-import terrasseImg from '/images/terrasse.jpg';
-import marrakechImg from '/images/marrakech.jpg';
-import room1Img from '/images/room1.jpg';
-import room2Img from '/images/room2.jpg';
-import room3Img from '/images/room3.jpg';
-import riadLogo from '/images/riad-logo.svg';
+const heroBg = `${import.meta.env.BASE_URL}images/hero-bg.jpg`;
+const zelligeImg = `${import.meta.env.BASE_URL}images/zellige.jpg`;
+const piscineImg = `${import.meta.env.BASE_URL}images/piscine.jpg`;
+const foodImg = `${import.meta.env.BASE_URL}images/food.jpg`;
+const terrasseImg = `${import.meta.env.BASE_URL}images/terrasse.jpg`;
+const marrakechImg = `${import.meta.env.BASE_URL}images/marrakech.jpg`;
+const room1Img = `${import.meta.env.BASE_URL}images/room1.jpg`;
+const room2Img = `${import.meta.env.BASE_URL}images/room2.jpg`;
+const room3Img = `${import.meta.env.BASE_URL}images/room3.jpg`;
+const riadLogo = `${import.meta.env.BASE_URL}images/logo.png`;
 import Booking from './Booking';
 
 const fadeUp = {
