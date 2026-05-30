@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, MapPin, Phone, Coffee, Wifi, Shield, Plane, ArrowRight, Check, Menu, X, Sparkles, Heart, Leaf, Music } from 'lucide-react';
-import heroBg from './assets/hero-bg.jpg';
-import zelligeImg from './assets/zellige.jpg';
-import piscineImg from './assets/piscine.jpg';
-import foodImg from './assets/food.jpg';
-import terrasseImg from './assets/terrasse.jpg';
-import marrakechImg from './assets/marrakech.jpg';
-import room1Img from './assets/room1.jpg';
-import room2Img from './assets/room2.jpg';
-import room3Img from './assets/room3.jpg';
+import heroBg from '/images/hero-bg.jpg';
+import zelligeImg from '/images/zellige.jpg';
+import piscineImg from '/images/piscine.jpg';
+import foodImg from '/images/food.jpg';
+import terrasseImg from '/images/terrasse.jpg';
+import marrakechImg from '/images/marrakech.jpg';
+import room1Img from '/images/room1.jpg';
+import room2Img from '/images/room2.jpg';
+import room3Img from '/images/room3.jpg';
 import riadLogo from '/images/riad-logo.svg';
 import Booking from './Booking';
 
